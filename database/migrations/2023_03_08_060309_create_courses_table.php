@@ -15,7 +15,7 @@ return new class extends Migration
             $table->id();
             $table->string('course_key');
             $table->string('course_name');
-            $table->string('robotics_kit');
+            $table->string('robotics_kit')->index();
             $table->timestamps();
         });
     }

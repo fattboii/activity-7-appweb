@@ -11,10 +11,9 @@ return new class extends Migration
      */
     public function up(): void
     {
-        Schema::create('groups', function (Blueprint $table) {
+        Schema::create('robokits', function (Blueprint $table) {
             $table->id();
-            $table->integer('course')->index();
-            $table->integer('group_id')->index();
+            $table->String('kit_name');
             $table->timestamps();
         });
     }
@@ -24,6 +23,6 @@ return new class extends Migration
      */
     public function down(): void
     {
-        Schema::dropIfExists('groups');
+        Schema::dropIfExists('robokits');
     }
 };

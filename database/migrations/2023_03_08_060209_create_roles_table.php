@@ -13,7 +13,7 @@ return new class extends Migration
     {
         Schema::create('roles', function (Blueprint $table) {
             $table->id();
-            $table->integer('role_id')->unique();
+            $table->integer('role_id')->index();
             $table->timestamps();
         });
     }
