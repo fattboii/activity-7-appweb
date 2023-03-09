@@ -16,7 +16,7 @@ class UserSeeder extends Seeder
     public function run(): void
     {
         //seeder for the three roles that a user has(teacher, student, admin)
-        //roles: 1 = admin, 2 = teacher, 3 = student
+        //role ID: 1 = admin, 2 = teacher, 3 = student
         DB::table('users')->insert([
             'user_name' => 'Admin',
             'password' => 'Adm@2022 ',
