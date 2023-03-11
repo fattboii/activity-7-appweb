@@ -4,6 +4,9 @@ namespace Database\Seeders;
 
 use Illuminate\Database\Console\Seeds\WithoutModelEvents;
 use Illuminate\Database\Seeder;
+use App\Models\course;
+use Illuminate\Support\Facades\DB;
+
 
 class CourseSeeder extends Seeder
 {

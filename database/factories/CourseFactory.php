@@ -21,7 +21,7 @@ class CourseFactory extends Factory
             // kit ID: 1 = StarterKit, 2 = Educational Robotics Kit, 3 = Kit5
             'course_key' => $this->faker->word(),
             'course_name' => $this->faker->word(),
-            'robotics_kit ' => $this->faker->numberBetween(0, 4),
+            'robotics_kit' => $this->faker->numberBetween(1, 3),
         ];
     }
 }
